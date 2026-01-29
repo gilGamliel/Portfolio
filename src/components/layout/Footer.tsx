@@ -59,13 +59,22 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:gilpsp3g@gmail.com"
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
-                  hello@example.com
+                  gilpsp3g@gmail.com
                 </a>
               </li>
-              <li>
+                            <li>
+                <a
+                  href="callto:+972505268883"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  050-5268883
+                </a>
+              </li>
+
+              {/* <li>
                 <a
                   href="https://github.com"
                   target="_blank"
@@ -74,7 +83,7 @@ export function Footer() {
                 >
                   GitHub
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://linkedin.com"
@@ -89,11 +98,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
+        {/* <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p className="text-center text-sm text-gray-500 dark:text-gray-500">
             © {currentYear} All rights reserved. Built with Next.js & TypeScript.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

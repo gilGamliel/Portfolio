@@ -106,6 +106,7 @@
           "subtitle": "Speech-to-Text (STT)",
           "items": [
             "Whisper-based models",
+            "ivrit ai - Whisper-large-v3-turbo-ct2 model",
             "Streaming transcription",
             "Batch transcription"
           ]
@@ -262,7 +263,7 @@
   ],
 
   "status": {
-    "stage": "advanced-development",
+    "stage": "production",
     "live": false,
     "criticality": "Complex real-time AI system handling live phone calls and business workflows"
   },

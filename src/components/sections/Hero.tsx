@@ -28,9 +28,6 @@ export function Hero() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Greeting */}
-        <p className="text-blue-600 dark:text-blue-400 font-medium mb-4 animate-fade-in">
-          Hello, I&apos;m
-        </p>
 
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
@@ -97,7 +94,7 @@ export function Hero() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <svg
             className="w-6 h-6 text-gray-400"
             fill="none"
@@ -111,7 +108,7 @@ export function Hero() {
               d="M19 14l-7 7m0 0l-7-7m7 7V3"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
     </section>
   );
