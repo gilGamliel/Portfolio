@@ -48,4 +48,6 @@ export const AnalyticsEvents = {
   CLICK_GITHUB: 'click_github',
   CLICK_LINKEDIN: 'click_linkedin',
   CLICK_EMAIL: 'click_email',
+    CLICK_PHONE: 'click_phone',
+
 } as const;

@@ -7,13 +7,14 @@ interface ContactLinksProps {
   email?: string;
   github?: string;
   linkedin?: string;
+  phone?: string;
 }
 
 /**
  * Contact links with analytics tracking
  * Client component to enable event tracking
  */
-export function ContactLinks({ email, github, linkedin }: ContactLinksProps) {
+export function ContactLinks({ email, github, linkedin  , phone}: ContactLinksProps) {
   const handleGitHubClick = () => {
     trackEvent(AnalyticsEvents.CLICK_GITHUB);
   };
@@ -24,6 +25,9 @@ export function ContactLinks({ email, github, linkedin }: ContactLinksProps) {
 
   const handleEmailClick = () => {
     trackEvent(AnalyticsEvents.CLICK_EMAIL);
+  };
+  const handlePhoneClick = () => {
+    trackEvent(AnalyticsEvents.CLICK_PHONE);
   };
 
   return (
@@ -52,6 +56,32 @@ export function ContactLinks({ email, github, linkedin }: ContactLinksProps) {
           Email Me
         </Button>
       )}
+
+            {phone && (
+        <Button
+          href={`callto:${email}`}
+          variant="primary"
+          size="lg"
+          onClick={handlePhoneClick}
+        >
+          <svg
+            className="w-5 h-5 mr-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+          Call Me
+        </Button>
+      )}
+
+      
 
       {/* GitHub */}
       {github && (

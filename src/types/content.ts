@@ -29,6 +29,7 @@ export interface ProfileLinks {
   linkedin?: string;
   github?: string;
   email?: string;
+  phone?: string;
 }
 
 export interface ProfileData {
