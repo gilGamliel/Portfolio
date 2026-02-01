@@ -31,11 +31,19 @@ export default function RootLayout({
       <head>
         {/* Plausible Analytics - Privacy-friendly, no cookies */}
         <Script
-          defer
-          data-domain="gilgamlielportfolio.vercel.app"
-          src="https://plausible.io/js/script.js"
+          async
+          src="https://plausible.io/js/pa-rkOmJanrp9w3H4M47wrJf.js"
           strategy="afterInteractive"
         />
+        <Script
+          id="plausible-init"
+          strategy="afterInteractive"
+        >
+          {`
+            window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+            plausible.init()
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-950 text-gray-900 dark:text-white`}
